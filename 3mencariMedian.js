@@ -1,5 +1,14 @@
 function cariMedian(array) {
     // you can only write your code here!
+    for (var i = 1; i< array.length; i++){
+        for (var j = 0; j<i; j++){
+            if (array[j] < array[i]){
+                var temp = array[j]
+                array[j] = array[i]
+                array[i] = temp
+            }
+        }
+    }
     if(array.length%2 === 0){
         var medianIndex = Math.floor(array.length/2)
         var median = (array[medianIndex-1]+array[medianIndex])/2
