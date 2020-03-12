@@ -7,14 +7,11 @@ function graduates(students){
         var temp = 0
         for (var key in obj){
             if(key === students[i].class && students[i].score >= 75){
-                obj[students[i].class].push(students[i])
+                obj[students[i].class].push({
+                  name : students[i].name,
+                  score : students[i].score})
             }            
         }        
-    }
-    for (var key in obj){
-        for (var j = 0; j<obj[key].length; j++){
-            delete obj[key][j].class
-        }
     }
     return obj
 }
