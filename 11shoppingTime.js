@@ -6,7 +6,7 @@ function shoppingTime (memberId, money){
         ['Sweater Uniklooh', 175000],
         ['Casing Handphone', 50000]
     ]
-    if(memberId === ''|| !memberId){
+    if(memberId === ''|| memberId === undefined){
         return 'Mohon maaf, toko X hanya berlaku untuk member saja'
     }
     var obj = {}
