@@ -6,7 +6,7 @@ function graduates(students){
         }
         var temp = 0
         for (var key in obj){
-            if(key === students[i].class && students[i].score >= 75){
+            if(students[i].class === key && students[i].score >= 75){
                 obj[students[i].class].push({
                   name : students[i].name,
                   score : students[i].score})

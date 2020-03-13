@@ -15,7 +15,6 @@ function highestScore(students){
             }
         }
     }
-    
     return obj
 }
 
